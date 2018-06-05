@@ -60,7 +60,7 @@ kind: Deployment
 
 metadata:
 
-  name: mhc-front
+  name: myshuttle-front
 
 spec:
 
@@ -82,15 +82,15 @@ spec:
 
       labels:
 
-        app: mhc-front
+        app: myshuttle-front
 
     spec:
 
       containers:
 
-      - name: mhc-front
+      - name: myshuttle-front
 
-        image: aksmyhealthclinic1213acr.azurecr.io/myhealth.web:latest
+        image: containerregistryterraform.azurecr.io/web:latest
 
         imagePullPolicy: Always
 
