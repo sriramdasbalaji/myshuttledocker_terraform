@@ -1,3 +1,13 @@
+terraform {
+  required_version = ">= 0.11"
+
+  backend "azurerm" {
+  storage_account_name = "terraformstorage3"
+    container_name       = "terraformstate"
+    key                  = "terraform.tfstate"
+	access_key  ="RWS/bJ4wT8ubD7IBjmJfKvJbohiYoh6rMaalG4Ep1vDHsYAubNPqf/fxY6m5RRy6uvU1HJ3we9BuwOSdx4lKKg=="}
+}
+
 provider "azurerm" {
    subscription_id = "1e8dd12f-b232-4895-9848-41766310c63a"
    client_id       = "22530b13-39b1-42f5-8c2e-6402dceb8305"
