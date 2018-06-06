@@ -9,11 +9,6 @@ resource "azurerm_resource_group" "akc-rg" {
     location = "east us"
 }
 
-#an attempt to keep the aci container group name (and dns label) somewhat unique
-resource "random_integer" "random_int" {
-    min = 100
-    max = 999
-}
 resource "azurerm_storage_account" "acr-storage" {
   name                     = "storageaccountacr65124"
   resource_group_name      = "${azurerm_resource_group.akc-rg.name}"
@@ -23,9 +18,9 @@ resource "azurerm_storage_account" "acr-storage" {
 }
 
 resource "azurerm_kubernetes_cluster" "aks_container" {
-    name        = "akc-${random_integer.random_int.result}"
+    name        = "akc-121313"
     location    = "east us"
-    dns_prefix  = "akc-${random_integer.random_int.result}"
+    dns_prefix  = "akc-121313"
 
     resource_group_name = "${azurerm_resource_group.akc-rg.name}"
     kubernetes_version  = "1.8.7"
