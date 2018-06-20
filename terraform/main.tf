@@ -39,7 +39,7 @@ resource "azurerm_kubernetes_cluster" "aks_container" {
     linux_profile {
         admin_username = "vmadmin"
         ssh_key {
-            key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhYTK8uzGEU+4qqzKaGBF/ULCoRJES8PR4K3GjueSTB/Cq9xh7cpcXdteQRM3ZsQERmVeyvdqW+JdRfWIEsg6xR6AZolcD5DOEI6R6Ec6WoDZYjBi38BE0c3Qp/1AkG5ltDLyoiiCQhQnuqOoS4x6KBZkI1pZsqUobYst5nHFZ3KUjwnphRwS1yDPZqg669teE6vhLlpT+K+1Co7JvmRuqVZpdrma/p+Z3EcGUSreAhJhzxppBr/b4do4vKe1fRqIl6pSRUlCoLVS1XJmxj3MhpLD0Nv4ncHhc1P2FiUofpsQMsas71adw9B40i95ArgpSXEE//VFqhIqRdxXx1k5z rakesh@Thailanddemo"
+            key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCh8l9Dvh9gHSX4lq7W1nTkQSrhSY9iPDgi8Oz2iKETMRkv2VIedKqPBceOEaxzlJtxdapW8zWfzMyN5CINLNnf24mFcJXxS4uICPh3qLyPBr44YnDlW5pA86D8xNduk+/QNFgXVxVpCcElWaYVWU4S7cicVt+ub1luElvR6urCmWco+MgHmd3WPjZggoxE4rFFN4a1IiDjFCmM/Wjhqv6RDmGItq+nCfDUKVjwrhDS8hPT7KP4Em4lLJ90WDY3JLKtCngPxEmlls7Cz9UJCGDDVVJ0VvyhYwrxCJdsjdiCLBepvbbM1ooih+l5dK+gI7q60m+kEtxIca+j0nXQhhjD sriramdasbalaji@Windows10E"
         }
     }
 
