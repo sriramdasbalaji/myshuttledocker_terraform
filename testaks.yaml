@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
       - name: example-container
-        image: zlabjp/docker-example:release-0.1.0
+        image: jenkinsacr.azurecr.io/web:latest
         ports:
         - containerPort: 8000
