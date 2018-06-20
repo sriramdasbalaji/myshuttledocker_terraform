@@ -2,17 +2,17 @@ terraform {
   required_version = ">= 0.11"
 
   backend "azurerm" {
-  storage_account_name = "terraformstorage3"
+  storage_account_name = "terraformstorage23"
     container_name       = "terraformstate"
     key                  = "terraform.tfstate"
-	access_key  ="RWS/bJ4wT8ubD7IBjmJfKvJbohiYoh6rMaalG4Ep1vDHsYAubNPqf/fxY6m5RRy6uvU1HJ3we9BuwOSdx4lKKg=="}
+	access_key  ="TlvaBt7CTfJOT4TBFSVBPzNuQs93Ko/10zs8QGYQYR2CRH+tOE0A/BGohEF92HHciSxqUWD8DMqSkp9ZveeH7Q=="}
 }
 
 provider "azurerm" {
-   subscription_id = "1e8dd12f-b232-4895-9848-41766310c63a"
-   client_id       = "22530b13-39b1-42f5-8c2e-6402dceb8305"
+   subscription_id = "5ae35b9e-9571-4a30-8426-62c1ba3394c4"
+   client_id       = "3a0796f5-a7e4-4dc8-a8cc-ec95d0fac553"
    client_secret   = "P2ssw0rd"
-   tenant_id       = "7be67d77-cc3f-4e1e-b2d9-bc3bdbdab7dd"
+   tenant_id       = "9fdb9cd0-248c-4fa9-bfcb-d000f2411b95"
  }
 resource "azurerm_resource_group" "akc-rg" {
     name     = "terraformakc"
