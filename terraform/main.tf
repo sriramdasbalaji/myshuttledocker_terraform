@@ -20,7 +20,7 @@ resource "azurerm_resource_group" "akc-rg" {
 }
 
 resource "azurerm_storage_account" "acr-storage" {
-  name                     = "storageaccountacr65124"
+  name                     = "storageaccountacr9653"
   resource_group_name      = "${azurerm_resource_group.akc-rg.name}"
   location                 = "${azurerm_resource_group.akc-rg.location}"
   account_tier             = "Standard"
@@ -28,9 +28,9 @@ resource "azurerm_storage_account" "acr-storage" {
 }
 
 resource "azurerm_kubernetes_cluster" "aks_container" {
-    name        = "akc-121313"
+    name        = "akc-9653"
     location    = "east us"
-    dns_prefix  = "akc-121313"
+    dns_prefix  = "akc-9653"
 
     resource_group_name = "${azurerm_resource_group.akc-rg.name}"
     kubernetes_version  = "1.8.7"
@@ -51,7 +51,7 @@ resource "azurerm_kubernetes_cluster" "aks_container" {
     }
 
     service_principal {
-        client_id     = "22530b13-39b1-42f5-8c2e-6402dceb8305"
+        client_id     = "3a0796f5-a7e4-4dc8-a8cc-ec95d0fac553"
         client_secret = "P2ssw0rd"
     }
 }
